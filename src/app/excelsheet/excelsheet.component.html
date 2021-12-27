@@ -1,0 +1,14 @@
+<h1>Excel Sheet Reader</h1>
+  
+
+<input type="file" (change)="onFileChange($event)" multiple="false" />
+
+<table>
+    <tbody>
+        <tr *ngFor="let row of data">
+            <td *ngFor="let cell of row">
+                {{cell}}
+            </td>
+        </tr>
+    </tbody>
+</table>
